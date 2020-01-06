@@ -415,6 +415,8 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
             @Override
             public boolean onMyLocationButtonClick() {
 
+                removerMarcadoresExistentes();
+
                 btnFindListaCidade.setEnabled(true);
                 btnOpenCityList.setEnabled(false);
                 buscaPorTexto = false;
